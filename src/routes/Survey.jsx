@@ -1,5 +1,6 @@
-import { useState } from "react";
 
+import { useState } from "react";
+import Header from "../components/Header";
 
 export default function Survey() {
   const [formData, setFormData] = useState({

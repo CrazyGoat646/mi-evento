@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Header from "../components/Header"; // Importamos el Header
 
 const events = [
   {
@@ -21,6 +22,7 @@ const events = [
 export default function Home() {
   return (
     <div className="p-4">
+      <Header /> {/* Mostramos el Header */}
       <h1 className="text-2xl font-bold mb-4 text-center">Nuestros eventos</h1>
       <div className="space-y-4">
         {events.map(event => (
