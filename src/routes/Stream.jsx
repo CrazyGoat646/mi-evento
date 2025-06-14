@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import streamImage from "/assets/stream.jpg";
 
 export default function Stream() {
