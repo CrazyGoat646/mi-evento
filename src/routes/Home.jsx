@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Header from "/components/Header";
 
 const events = [
   {
@@ -35,22 +36,5 @@ export default function Home() {
         ))}
       </div>
     </div>
-  );
-}
-
-import { Link } from "react-router-dom";
-import Header from "/components/Header";
-
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <div className="p-4">
-        <h1 className="text-2xl font-bold mb-4">Seleccioná un Evento</h1>
-        <Link to="/evento/1" className="block p-4 bg-white rounded shadow">
-          Evento 1
-        </Link>
-      </div>
-    </>
   );
 }
