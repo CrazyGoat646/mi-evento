@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import Header from "/components/Header";
 
 export default function EventDetail() {
   const { id } = useParams();
@@ -15,22 +16,6 @@ export default function EventDetail() {
         <Link to="stream" className="bg-gray-800 text-white px-4 py-2 rounded">Streaming</Link>
       </div>
     </div>
-  );
-}
-import { Link } from "react-router-dom";
-import Header from "/components/Header";
-
-export default function EventDetail() {
-  return (
-    <>
-      <Header />
-      <div className="p-4">
-        <h1 className="text-xl font-bold">Nombre del Evento</h1>
-        <p className="mb-4">Información detallada del evento...</p>
-        <Link to="encuesta" className="bg-blue-500 text-white px-4 py-2 rounded">Encuesta</Link>
-        <Link to="stream" className="ml-2 bg-gray-700 text-white px-4 py-2 rounded">Streaming</Link>
-      </div>
-    </>
   );
 }
 
