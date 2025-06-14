@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import streamImage from "../assets/stream.jpg";
+import Header from "/components/Header";
+import streamImage from "/assets/stream.jpg";
 
 export default function Stream() {
   const chatMessages = [
