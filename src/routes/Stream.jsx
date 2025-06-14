@@ -1,29 +1,35 @@
+import Header from "../components/Header";
+import streamImage from "../assets/stream.jpg";
+
 export default function Stream() {
+  const chatMessages = [
+    { user: "LunaBeta", message: "¡Esta pantalla aún está en fase beta!" },
+    { user: "TestUser_22", message: "¿Cuándo estará disponible el streaming?" },
+    { user: "JaviDev", message: "Estoy probando, ¡va quedando genial!" }
+  ];
+
   return (
-    <div className="h-screen flex flex-col">
-      <div className="relative">
-        <img src="/images/stream.jpg" alt="stream" className="w-full h-64 object-cover" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-white p-2 rounded-full">
-            <svg className="w-8 h-8 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M4 4l12 6-12 6V4z" />
-            </svg>
-          </div>
+    <div className="flex flex-col h-screen">
+      <Header />
+      <div className="flex-1">
+        <img src={streamImage} alt="Evento" className="w-full h-64 object-cover" />
+        <div className="p-4 overflow-y-auto max-h-72">
+          {chatMessages.map((msg, index) => (
+            <p key={index} className="mb-2">
+              <span className="font-semibold">{msg.user}:</span> {msg.message}
+            </p>
+          ))}
         </div>
       </div>
-      <div className="flex-1 bg-white p-4 overflow-y-auto">
-        <div className="space-y-2 text-sm">
-          <p><span className="text-pink-600 font-bold">Carlitos66:</span> Que buen evento</p>
-          <p><span className="text-yellow-600 font-bold">Monica970:</span> Increíble</p>
-          <p><span className="text-black font-bold">Manuuuuv:</span> Magnífico evento</p>
-          <p><span className="text-green-700 font-bold">LunaViajera92:</span> ¿A qué hora empieza?</p>
-          {/* Agrega más mensajes simulados si deseas */}
-        </div>
-      </div>
-      <div className="border-t p-2 flex items-center">
-        <input type="text" placeholder="Enviar un mensaje" className="flex-1 p-2 border rounded" />
-        <button className="ml-2 bg-pink-600 text-white px-4 py-2 rounded">Enviar</button>
+      <div className="p-4 border-t flex items-center">
+        <input
+          type="text"
+          disabled
+          placeholder="Chat no disponible - fase beta"
+          className="flex-1 bg-gray-200 p-2 rounded"
+        />
       </div>
     </div>
   );
 }
+
