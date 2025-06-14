@@ -18,7 +18,7 @@ Es un evento que se celebra en Vigo desde el año 2015. En las pasadas 7 edicion
 
 El objetivo es atraer a todos los públicos: Elite-Popular y Kid
       </p>
-      <div className="space-x-2 mb-4">
+       <div className="space-x-2 mb-4">
         <button className="bg-gray-400 text-white px-4 py-2 rounded cursor-default">
           Reglamento
         </button>
@@ -27,7 +27,7 @@ El objetivo es atraer a todos los públicos: Elite-Popular y Kid
         </button>
         <Link
           to="/"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition"
         >
           Eventos
         </Link>
@@ -35,13 +35,13 @@ El objetivo es atraer a todos los públicos: Elite-Popular y Kid
       <div className="space-x-2">
         <Link
           to="encuesta"
-          className="bg-pink-600 text-white px-4 py-2 rounded"
+          className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition"
         >
           Encuesta
         </Link>
         <Link
           to="stream"
-          className="bg-gray-800 text-white px-4 py-2 rounded"
+          className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition"
         >
           Streaming
         </Link>
