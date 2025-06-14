@@ -7,7 +7,7 @@ export default function EventDetail() {
   return (
     <div className="p-4">
       <Header /> {/* Agregamos el Header */}
-      <img src="/images/Bootcamp.png" className="w-full h-52 object-cover rounded mb-4" alt="" />
+      <img src="/images/Boot2.png" className="w-full h-52 object-cover rounded mb-4" alt="" />
       <h1 className="text-2xl font-bold mb-2">Desafío Boot Camp</h1>
       <p className="mb-4 text-gray-700">
         Desafío Boot Camp es mucho más que una carrera de obstáculos, es un evento deportivo rodeado de actividades y propuestas que tienen a la Ciudad de Vigo como centro, alrededor del cual todo gira.
