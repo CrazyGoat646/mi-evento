@@ -10,7 +10,7 @@ export default function EventDetail() {
         className="w-full max-h-80 object-contain rounded mb-4"
         alt="Desafío Boot Camp"
       />
-      <h1 className="text-2xl font-bold mb-2">Desafío Boot Camp</h1>
+      <h1 className="text-2xl font-bold mb-2">Entrega de premios Innovatech 2025</h1>
       <p className="mb-4 text-gray-700">
         CIFP Universidade Laboral (A Coruña)
         <br></br>
