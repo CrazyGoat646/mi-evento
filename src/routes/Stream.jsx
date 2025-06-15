@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import equipoImage from "../assets/equipo.png";
+import equipoImage from "../assets/equipo.jpg";
 import tecladoImage from "/images/teclado.png";
 
 export default function Stream() {
