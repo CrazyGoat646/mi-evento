@@ -12,7 +12,8 @@ export default function EventDetail() {
       />
       <h1 className="text-2xl font-bold mb-2">Desafío Boot Camp</h1>
       <p className="mb-4 text-gray-700">
-        Ubicación: CIFP Universidade Laboral (A Coruña)
+        CIFP Universidade Laboral (A Coruña)
+        <br></br>
         <br />
         Descrición: A entrega de premios do programa InnovaTech 2024/2025 reune os proxectos máis innovadores do alumnado de Formación Profesional de toda Galicia. Será unha xornada para compartir ilusión, creatividade e moita tecnoloxía, tras meses de traballo e aprendizaxe.
         <br />
@@ -26,11 +27,18 @@ export default function EventDetail() {
           alt="Reglamento"
           className="w-10 h-auto cursor-default"
         />
-        <img
-          src="/images/lugar.png"
-          alt="Lugar"
-          className="w-10 h-auto cursor-default"
-        />
+        <a
+          href="https://www.google.es/maps/place/CIFP+Universidade+Laboral/@43.3169306,-8.3858133,14.17z/data=!4m6!3m5!1s0xd2e64b8bfe41c1b:0xc733087538d7c2ec!8m2!3d43.3190351!4d-8.3763634!16s%2Fg%2F11cm03bhvq?hl=es&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/images/lugar.png"
+            alt="Lugar"
+            className="w-12 max-w-[3rem] h-auto hover:scale-105 transition-transform"
+          />
+        </a>
+
         <Link to="/">
           <img
             src="/images/eventos.png"
