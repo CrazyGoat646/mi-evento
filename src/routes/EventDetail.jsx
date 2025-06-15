@@ -19,18 +19,18 @@ export default function EventDetail() {
         <img
           src="/images/reglamento.png"
           alt="Reglamento"
-          className="w-32 h-auto cursor-default"
+          className="w-20 h-auto cursor-default"
         />
         <img
           src="/images/lugar.png"
           alt="Lugar"
-          className="w-32 h-auto cursor-default"
+          className="w-20 h-auto cursor-default"
         />
         <Link to="/">
           <img
             src="/images/eventos.png"
             alt="Eventos"
-            className="w-32 h-auto hover:scale-105 transition-transform"
+            className="w-20 h-auto hover:scale-105 transition-transform"
           />
         </Link>
       </div>
@@ -40,14 +40,14 @@ export default function EventDetail() {
           <img
             src="/images/encuesta.png"
             alt="Encuesta"
-            className="w-32 h-auto hover:scale-105 transition-transform"
+            className="w-20 h-auto hover:scale-105 transition-transform"
           />
         </Link>
         <Link to="stream">
           <img
             src="/images/chat.png"
             alt="Streaming"
-            className="w-32 h-auto hover:scale-105 transition-transform"
+            className="w-20 h-auto hover:scale-105 transition-transform"
           />
         </Link>
       </div>
