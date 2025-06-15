@@ -22,7 +22,7 @@ export default function Stream() {
 
       <div className="relative w-full h-64 mx-auto">
         <img
-          src="/images/equipo.png"
+          src="/images/equipo.jpg"
           alt="Evento"
           className="w-full h-full object-cover"
         />
