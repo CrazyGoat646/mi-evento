@@ -11,12 +11,11 @@ export default function Stream() {
     <div className="flex flex-col h-screen">
       <Header />
 
-      {/* Imagen principal con botón de play */}
-      <div className="relative">
+      <div className="relative max-h-64 mx-auto w-full">
         <img
           src="/images/equipo.png"
           alt="Evento"
-          className="w-full max-h-64 object-contain mx-auto"
+          className="w-full h-64 object-contain"
         />
         <button
           className="absolute inset-0 flex items-center justify-center"
@@ -34,23 +33,21 @@ export default function Stream() {
         </button>
       </div>
 
-      {/* Mensajes del chat */}
       <div className="p-4 overflow-y-auto max-h-72 flex-1">
         {chatMessages.map((msg, index) => (
           <p key={index} className="mb-2 flex items-center">
-            <span className={`mr-2 w-2 h-2 rounded-full ${msg.color} inline-block`} />
+            <span className={`mr-2 w-3 h-3 rounded-full ${msg.color} inline-block`} />
             <span className={`font-semibold mr-1 ${msg.color}`}>{msg.user}:</span>
             <span>{msg.message}</span>
           </p>
         ))}
       </div>
 
-      {/* Imagen del teclado fija al fondo */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t py-2 flex justify-center z-50">
         <img
           src="/images/teclado.png"
           alt="Teclado"
-          className="w-32 h-auto object-contain"
+          className="w-full h-auto object-cover"
         />
       </div>
     </div>
