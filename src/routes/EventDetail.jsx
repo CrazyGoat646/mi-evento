@@ -6,7 +6,7 @@ export default function EventDetail() {
   return (
     <div className="p-4">
       <img
-        src="/images/Bootcamp.png"
+        src="/images/premios.png"
         className="w-full h-52 object-cover rounded mb-4"
         alt="Desafío Boot Camp"
       />
