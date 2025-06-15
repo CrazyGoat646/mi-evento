@@ -3,9 +3,9 @@ import streamImage from "../assets/stream.jpg";
 
 export default function Stream() {
   const chatMessages = [
-    { user: "LunaBeta", message: "¡Esta pantalla aún está en fase beta!" },
-    { user: "TestUser_22", message: "¿Cuándo estará disponible el streaming?" },
-    { user: "JaviDev", message: "Estoy probando, ¡va quedando genial!" }
+    { user: "Guada", message: "¡Esta pantalla aún está en fase beta!" },
+    { user: "Brais", message: "¿Cuándo estará disponible el streaming?" },
+    { user: "Angel", message: "Estoy probando, ¡va quedando genial!" }
   ];
 
   return (
