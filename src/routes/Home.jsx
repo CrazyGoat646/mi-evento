@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../components/Header"; // Importamos el Header
+import Header from "../components/Header";
 
 const events = [
   {
@@ -12,7 +12,7 @@ const events = [
 export default function Home() {
   return (
     <div className="p-4">
-      <Header /> {/* Mostramos el Header */}
+      <Header />
       <h1 className="text-2xl font-bold mb-4 text-center">Nuestros eventos</h1>
       <div className="space-y-4">
         {events.map(event => (
@@ -21,7 +21,11 @@ export default function Home() {
             to={`/evento/${event.id}`}
             className="block bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition"
           >
-            <img src={event.image} alt={event.title} className="w-full h-48 object-cover" />
+            <img
+              src={event.image}
+              alt={event.title}
+              className="w-full max-h-80 object-contain bg-white"
+            />
             <div className="p-4 text-center font-semibold">{event.title}</div>
           </Link>
         ))}
@@ -29,3 +33,4 @@ export default function Home() {
     </div>
   );
 }
+
