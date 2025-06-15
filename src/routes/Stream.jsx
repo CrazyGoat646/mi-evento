@@ -1,47 +1,56 @@
 import Header from "../components/Header";
-import equipoImage from "../images/equipo.jpg";
-import tecladoImage from "/images/teclado.png";
 
 export default function Stream() {
   const chatMessages = [
-    { user: "Guada", message: "¡Esta pantalla aún está en fase beta!", color: "text-pink-500", dot: "bg-pink-500" },
-    { user: "Brais", message: "¿Cuándo estará disponible el streaming?", color: "text-green-500", dot: "bg-green-500" },
-    { user: "Angel", message: "Estoy probando, ¡va quedando genial!", color: "text-blue-500", dot: "bg-blue-500" }
+    { user: "Guada", color: "text-red-500", message: "¡Esta pantalla aún está en fase beta!" },
+    { user: "Brais", color: "text-blue-500", message: "¿Cuándo estará disponible el streaming?" },
+    { user: "Angel", color: "text-green-500", message: "Estoy probando, ¡va quedando genial!" },
   ];
 
   return (
-    <div className="flex flex-col h-screen relative">
+    <div className="flex flex-col h-screen">
       <Header />
 
-      {/* Imagen con botón play encima */}
-      <div className="relative w-full max-h-64">
-        <img src={equipoImage} alt="Evento" className="w-full max-h-64 object-contain mx-auto" />
-        <button className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-black bg-opacity-50 rounded-full p-3">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M8 5v14l11-7z" />
+      {/* Imagen principal con botón de play */}
+      <div className="relative">
+        <img
+          src="/images/equipo.png"
+          alt="Evento"
+          className="w-full max-h-64 object-contain mx-auto"
+        />
+        <button
+          className="absolute inset-0 flex items-center justify-center"
+          onClick={() => {}}
+        >
+          <div className="bg-black bg-opacity-50 rounded-full p-4">
+            <svg
+              className="w-8 h-8 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="M6 4l10 6-10 6V4z" />
             </svg>
           </div>
         </button>
       </div>
 
-      {/* Chat con nombres en colores y punto */}
-      <div className="p-4 overflow-y-auto flex-1 space-y-2">
+      {/* Mensajes del chat */}
+      <div className="p-4 overflow-y-auto max-h-72 flex-1">
         {chatMessages.map((msg, index) => (
-          <div key={index} className="bg-gray-100 p-2 rounded shadow-sm flex items-center gap-2">
-            <span className={`w-2 h-2 rounded-full ${msg.dot}`}></span>
-            <span className={`font-semibold ${msg.color}`}>{msg.user}:</span>
+          <p key={index} className="mb-2 flex items-center">
+            <span className={`mr-2 w-2 h-2 rounded-full ${msg.color} inline-block`} />
+            <span className={`font-semibold mr-1 ${msg.color}`}>{msg.user}:</span>
             <span>{msg.message}</span>
-          </div>
+          </p>
         ))}
       </div>
 
-      {/* Imagen teclado como barra fija */}
+      {/* Imagen del teclado fija al fondo */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t py-2 flex justify-center z-50">
         <img
-          src={tecladoImage}
+          src="/images/teclado.png"
           alt="Teclado"
-          className="w-12 h-auto hover:scale-105 transition-transform"
+          className="w-32 h-auto object-contain"
         />
       </div>
     </div>
