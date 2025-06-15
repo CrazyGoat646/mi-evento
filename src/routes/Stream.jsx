@@ -1,21 +1,30 @@
 import Header from "../components/Header";
 
+function getColor(user) {
+  switch(user) {
+    case "Guada": return "#EF4444"; // rojo
+    case "Brais": return "#3B82F6"; // azul
+    case "Angel": return "#10B981"; // verde
+    default: return "#000000";
+  }
+}
+
 export default function Stream() {
   const chatMessages = [
-    { user: "Guada", color: "text-red-500", message: "¡Esta pantalla aún está en fase beta!" },
-    { user: "Brais", color: "text-blue-500", message: "¿Cuándo estará disponible el streaming?" },
-    { user: "Angel", color: "text-green-500", message: "Estoy probando, ¡va quedando genial!" },
+    { user: "Guada", message: "¡Esta pantalla aún está en fase beta!" },
+    { user: "Brais", message: "¿Cuándo estará disponible el streaming?" },
+    { user: "Angel", message: "Estoy probando, ¡va quedando genial!" },
   ];
 
   return (
     <div className="flex flex-col h-screen">
       <Header />
 
-      <div className="relative max-h-64 mx-auto w-full">
+      <div className="relative w-full h-64 mx-auto">
         <img
           src="/images/equipo.png"
           alt="Evento"
-          className="w-full h-64 object-contain"
+          className="w-full h-full object-cover"
         />
         <button
           className="absolute inset-0 flex items-center justify-center"
@@ -36,8 +45,16 @@ export default function Stream() {
       <div className="p-4 overflow-y-auto max-h-72 flex-1">
         {chatMessages.map((msg, index) => (
           <p key={index} className="mb-2 flex items-center">
-            <span className={`mr-2 w-3 h-3 rounded-full ${msg.color} inline-block`} />
-            <span className={`font-semibold mr-1 ${msg.color}`}>{msg.user}:</span>
+            <span
+              className="mr-2 inline-block rounded-full"
+              style={{ width: 12, height: 12, backgroundColor: getColor(msg.user) }}
+            />
+            <span
+              className="font-semibold mr-1"
+              style={{ color: getColor(msg.user) }}
+            >
+              {msg.user}:
+            </span>
             <span>{msg.message}</span>
           </p>
         ))}
@@ -53,5 +70,6 @@ export default function Stream() {
     </div>
   );
 }
+
 
 
