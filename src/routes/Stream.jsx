@@ -20,7 +20,7 @@ export default function Stream() {
     <div className="flex flex-col h-screen">
       <Header />
 
-      <div className="relative w-full h-64 mx-auto">
+      <div className="relative w-full max-w-4xl mx-auto h-64 rounded overflow-hidden">
         <img
           src="/images/equipo.jpg"
           alt="Evento"
@@ -29,6 +29,7 @@ export default function Stream() {
         <button
           className="absolute inset-0 flex items-center justify-center"
           onClick={() => {}}
+          aria-label="Play"
         >
           <div className="bg-black bg-opacity-50 rounded-full p-4">
             <svg
