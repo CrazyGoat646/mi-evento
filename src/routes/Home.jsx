@@ -4,19 +4,9 @@ import Header from "../components/Header"; // Importamos el Header
 const events = [
   {
     id: 1,
-    title: "Desafío Boot Camp Vigo",
-    image: "/images/Bootcamp.png"
+    title: "Entrega de premios Innovatech 2025",
+    image: "/images/premios.png"
   },
-  {
-    id: 2,
-    title: "Gastro Movida",
-    image: "/images/Gastro.png"
-  },
-  {
-    id: 3,
-    title: "LA21 Media Maratón de Vigo",
-    image: "/images/Maraton.png"
-  }
 ];
 
 export default function Home() {
