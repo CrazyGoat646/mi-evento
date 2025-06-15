@@ -35,7 +35,7 @@ export default function EventDetail() {
           <img
             src="/images/lugar.png"
             alt="Lugar"
-            className="w-12 max-w-[3rem] h-auto hover:scale-105 transition-transform"
+            className="w-10 max-w-[3rem] h-auto hover:scale-105 transition-transform"
           />
         </a>
 
