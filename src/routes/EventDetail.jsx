@@ -4,10 +4,10 @@ export default function EventDetail() {
   const { id } = useParams();
 
   return (
-    <div className="pt-4 pb-20 px-4 min-h-screen">
+    <div className="pt-4 pb-24 px-4 min-h-screen">
       <img
         src="/images/premios.png"
-        className="w-full h-52 object-cover rounded mb-4"
+        className="w-full max-h-80 object-contain rounded mb-4"
         alt="Desafío Boot Camp"
       />
       <h1 className="text-2xl font-bold mb-2">Desafío Boot Camp</h1>
@@ -20,7 +20,7 @@ export default function EventDetail() {
       </p>
 
       {/* Barra fija de botones */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-3 flex justify-center gap-4 z-50">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t py-3 flex justify-center gap-6 z-50">
         <img
           src="/images/reglamento.png"
           alt="Reglamento"
@@ -56,5 +56,6 @@ export default function EventDetail() {
     </div>
   );
 }
+
 
 
