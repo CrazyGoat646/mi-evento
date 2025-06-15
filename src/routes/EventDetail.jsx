@@ -20,7 +20,7 @@ export default function EventDetail() {
       </p>
 
       {/* Barra fija de botones */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t py-3 flex justify-center gap-6 z-50">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t py-3 flex justify-center gap-9 z-50">
         <img
           src="/images/reglamento.png"
           alt="Reglamento"
