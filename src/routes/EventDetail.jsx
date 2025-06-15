@@ -6,6 +6,7 @@ export default function EventDetail() {
 
   return (
     <div className="pt-4 pb-24 px-4 min-h-screen">
+      <Header />
       <img
         src="/images/premios.png"
         className="w-full max-h-80 object-contain rounded mb-4"
