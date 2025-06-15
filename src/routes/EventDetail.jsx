@@ -7,16 +7,12 @@ export default function EventDetail() {
   return (
     <div className="p-4">
       <Header /> {/* Agregamos el Header */}
-      <img src="/images/Boot2.png" className="w-full h-52 object-cover rounded mb-4" alt="" />
+      <img src="/images/premios.png" className="w-full h-52 object-cover rounded mb-4" alt="" />
       <h1 className="text-2xl font-bold mb-2">Desafío Boot Camp</h1>
       <p className="mb-4 text-gray-700">
-        Desafío Boot Camp es mucho más que una carrera de obstáculos, es un evento deportivo rodeado de actividades y propuestas que tienen a la Ciudad de Vigo como centro, alrededor del cual todo gira.
-
-Desafío Boot Camp es uno de los motores de turismo deportivo más potentes de las Rías Baixas en general de Vigo en particular.
-
-Es un evento que se celebra en Vigo desde el año 2015. En las pasadas 7 ediciones la organización (Pepita-Tery Producciones SL – Diesemm) organizamos una carrera de 6-7 km con 30-35 obstáculos para que fuesen superados por todos los participantes adultos y un recorrido específico de 1 km y 15 obstáculos para los más pequeños.
-
-El objetivo es atraer a todos los públicos: Elite-Popular y Kid
+       Ubicación: CIFP Universidade Laboral (A Coruña)
+Descrición: A entrega de premios do programa InnovaTech 2024/2025 reune os proxectos máis innovadores do alumnado de Formación Profesional de toda Galicia. Será unha xornada para compartir ilusión, creatividade e moita tecnoloxía, tras meses de traballo e aprendizaxe.
+Dende o IES Lois Peña Novo desexamos moita sorte a tódolos equipos participantes! Que siga a innovación, a colaboración e o espírito emprendedor!
       </p>
        <div className="space-x-2 mb-4">
         <button className="bg-gray-400 text-white px-4 py-2 rounded cursor-default">
