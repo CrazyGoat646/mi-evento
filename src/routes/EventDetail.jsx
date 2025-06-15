@@ -6,13 +6,15 @@ export default function EventDetail() {
   return (
     <div className="p-4">
       <img
-        src="/images/Bootcamp.png"
+        src="/images/premios.png"
         className="w-full h-52 object-cover rounded mb-4"
         alt="Desafío Boot Camp"
       />
       <h1 className="text-2xl font-bold mb-2">Desafío Boot Camp</h1>
       <p className="mb-4 text-gray-700">
-        Es mucho más que una carrera de obstáculos, es un evento deportivo con actividades para todos. Se celebra en Vigo desde 2015...
+        Ubicación: CIFP Universidade Laboral (A Coruña)
+Descrición: A entrega de premios do programa InnovaTech 2024/2025 reune os proxectos máis innovadores do alumnado de Formación Profesional de toda Galicia. Será unha xornada para compartir ilusión, creatividade e moita tecnoloxía, tras meses de traballo e aprendizaxe.
+Dende o IES Lois Peña Novo desexamos moita sorte a tódolos equipos participantes! Que siga a innovación, a colaboración e o espírito emprendedor!
       </p>
 
       <div className="flex flex-wrap gap-4 justify-center mb-4">
