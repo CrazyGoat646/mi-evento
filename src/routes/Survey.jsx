@@ -30,10 +30,10 @@ export default function Survey() {
     <>
       <Header />
       <div className="p-6 space-y-6">
-        <h1 className="text-2xl font-bold text-center">Encuesta de satisfacción</h1>
+        <h1 className="text-2xl font-bold text-center">Enquisa de satisfacción</h1>
 
         <div>
-          <p className="mb-2 font-medium">¿Qué puntuación del 1 al 5 le darías al evento?</p>
+          <p className="mb-2 font-medium">Que puntuación lle darías ao evento de 1 a 5?</p>
           <div className="flex space-x-2">
             {[1, 2, 3, 4, 5].map(num => (
               <button
@@ -50,8 +50,8 @@ export default function Survey() {
         </div>
 
         <div>
-          <p className="mb-2 font-medium">¿Cómo calificarías la atención recibida?</p>
-          {["Satisfecho", "Nada satisfecho", "No sabe / No responde"].map(opt => (
+          <p className="mb-2 font-medium">Como cualificarías a atención recibida?</p>
+          {["Satisfeito/a", "Nada satisfeito/a", "Non o sei / Non responde"].map(opt => (
             <button
               key={opt}
               onClick={() => handleChange("attention", opt)}
@@ -65,7 +65,7 @@ export default function Survey() {
         </div>
 
         <div>
-          <p className="mb-2 font-medium">¿Repetirías la experiencia?</p>
+          <p className="mb-2 font-medium">Repetirías a experiencia?</p>
           {["Sí", "No"].map(opt => (
             <button
               key={opt}
@@ -80,10 +80,10 @@ export default function Survey() {
         </div>
 
         <div>
-          <p className="mb-2 font-medium">Comentarios que podríamos mejorar:</p>
+          <p className="mb-2 font-medium">Comentarios que poderiamos mellorar:</p>
           <textarea
             className="w-full border p-2 rounded"
-            placeholder="Añade tu comentario..."
+            placeholder="Engade o teu comentario..."
             value={formData.comment}
             onChange={(e) => handleChange("comment", e.target.value)}
           />
@@ -94,7 +94,7 @@ export default function Survey() {
             onClick={handleSubmit}
             className="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-700"
           >
-            Enviar encuesta
+            Enviar enquisa
           </button>
         </div>
       </div>

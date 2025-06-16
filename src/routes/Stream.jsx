@@ -11,9 +11,9 @@ function getColor(user) {
 
 export default function Stream() {
   const chatMessages = [
-    { user: "Guada", message: "¡Esta pantalla aún está en fase beta!" },
-    { user: "Brais", message: "¿Cuándo estará disponible el streaming?" },
-    { user: "Angel", message: "Estoy probando, ¡va quedando genial!" },
+    { user: "Guada", message: "Esta pantalla aínda está en versión beta!" },
+    { user: "Brais", message: "Cando estará dispoñible a transmisión en directo?" },
+    { user: "Angel", message: "Estou probándoo, ten moi boa pinta!" },
   ];
 
   return (
