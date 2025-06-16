@@ -49,46 +49,64 @@ export default function EventDetail() {
       )}
 
       {/* Barra fija de botones */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t py-3 flex justify-center gap-10 z-40">
-        <img
-          src="/images/reglamento.png"
-          alt="Reglamento"
-          className="w-10 h-auto cursor-default"
-        />
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t py-3 flex justify-center gap-8 z-40 text-sm text-center">
+        <div className="flex flex-col items-center">
+          <img
+            src="/images/reglamento.png"
+            alt="Reglamento"
+            className="w-10 h-auto cursor-default"
+          />
+          <span className="text-xs mt-1">Regulamento</span>
+        </div>
 
-        <button onClick={() => setShowMap(true)}>
-          <img
-            src="/images/lugar.png"
-            alt="Lugar"
-            className="w-10 max-w-[3rem] h-auto hover:scale-105 transition-transform"
-          />
-        </button>
+        <div className="flex flex-col items-center">
+          <button onClick={() => setShowMap(true)}>
+            <img
+              src="/images/lugar.png"
+              alt="Lugar"
+              className="w-10 max-w-[3rem] h-auto hover:scale-105 transition-transform"
+            />
+          </button>
+          <span className="text-xs mt-1">Lugar</span>
+        </div>
 
-        <Link to="/">
-          <img
-            src="/images/eventos.png"
-            alt="Eventos"
-            className="w-10 h-auto hover:scale-105 transition-transform"
-          />
-        </Link>
-        <Link to="encuesta">
-          <img
-            src="/images/encuesta.png"
-            alt="Encuesta"
-            className="w-10 h-auto hover:scale-105 transition-transform"
-          />
-        </Link>
-        <Link to="stream">
-          <img
-            src="/images/chat.png"
-            alt="Streaming"
-            className="w-10 h-auto hover:scale-105 transition-transform"
-          />
-        </Link>
+        <div className="flex flex-col items-center">
+          <Link to="/">
+            <img
+              src="/images/eventos.png"
+              alt="Eventos"
+              className="w-10 h-auto hover:scale-105 transition-transform"
+            />
+          </Link>
+          <span className="text-xs mt-1">Eventos</span>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Link to="encuesta">
+            <img
+              src="/images/encuesta.png"
+              alt="Encuesta"
+              className="w-10 h-auto hover:scale-105 transition-transform"
+            />
+          </Link>
+          <span className="text-xs mt-1">Enquisa</span>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Link to="stream">
+            <img
+              src="/images/chat.png"
+              alt="Streaming"
+              className="w-10 h-auto hover:scale-105 transition-transform"
+            />
+          </Link>
+          <span className="text-xs mt-1">Chat</span>
+        </div>
       </div>
     </div>
   );
 }
+
 
 
 
