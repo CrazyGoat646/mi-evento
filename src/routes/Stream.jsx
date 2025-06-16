@@ -1,15 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 
 function getColor(user) {
   switch(user) {
-    case "Guada": return "#EF4444"; // rojo
-    case "Brais": return "#3B82F6"; // azul
-    case "Angel": return "#10B981"; // verde
+    case "Guada": return "#EF4444";
+    case "Brais": return "#3B82F6";
+    case "Angel": return "#10B981";
     default: return "#000000";
   }
 }
 
 export default function Stream() {
+  const navigate = useNavigate();
+
   const chatMessages = [
     { user: "Guada", message: "Esta pantalla aínda está en versión beta!" },
     { user: "Brais", message: "Cando estará dispoñible a transmisión en directo?" },
@@ -19,6 +22,15 @@ export default function Stream() {
   return (
     <div className="flex flex-col h-screen">
       <Header />
+
+      <div className="px-4 pt-4">
+        <button
+          onClick={() => navigate(-1)}
+          className="mb-4 text-[#DF4666] underline"
+        >
+          ← Volver atrás
+        </button>
+      </div>
 
       <div className="relative w-full max-w-4xl mx-auto h-64 rounded overflow-hidden">
         <img
@@ -71,6 +83,7 @@ export default function Stream() {
     </div>
   );
 }
+
 
 
 

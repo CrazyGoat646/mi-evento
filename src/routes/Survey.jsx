@@ -1,8 +1,10 @@
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 
 export default function Survey() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     rating: null,
     attention: "",
@@ -17,7 +19,7 @@ export default function Survey() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Encuesta enviada:", formData);
-    alert("¡Gracias por tu respuesta!");
+    alert("¡Gracias por tu resposta!");
     setFormData({
       rating: null,
       attention: "",
@@ -30,6 +32,13 @@ export default function Survey() {
     <>
       <Header />
       <div className="p-6 space-y-6">
+        <button
+          onClick={() => navigate(-1)}
+          className="text-[#DF4666] underline"
+        >
+          ← Volver atrás
+        </button>
+
         <h1 className="text-2xl font-bold text-center">Enquisa de satisfacción</h1>
 
         <div>
