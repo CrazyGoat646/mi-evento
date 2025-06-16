@@ -56,7 +56,7 @@ export default function EventDetail() {
             alt="Reglamento"
             className="w-10 h-auto cursor-default"
           />
-          <span className="text-xs mt-1">Regulamento</span>
+          <span className="text-xs mt-1">Info</span>
         </div>
 
         <div className="flex flex-col items-center">
