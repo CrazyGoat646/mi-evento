@@ -34,7 +34,7 @@ export default function Survey() {
       <div className="p-6 space-y-6">
         <button
           onClick={() => navigate(-1)}
-          className="text-[#DF4666] underline"
+          className="text-[#DF4661] underline"
         >
           ← Volver atrás
         </button>
@@ -48,8 +48,12 @@ export default function Survey() {
               <button
                 key={num}
                 className={`w-10 h-10 rounded-full border ${
-                  formData.rating === num ? "bg-pink-500 text-white" : "bg-white"
+                  formData.rating === num ? "text-white" : "bg-white"
                 }`}
+                style={{
+                  backgroundColor: formData.rating === num ? "#DF4661" : "white",
+                  borderColor: "#DF4661",
+                }}
                 onClick={() => handleChange("rating", num)}
               >
                 {num}
@@ -64,9 +68,12 @@ export default function Survey() {
             <button
               key={opt}
               onClick={() => handleChange("attention", opt)}
-              className={`block w-full text-left p-2 mb-2 border rounded ${
-                formData.attention === opt ? "bg-pink-500 text-white" : "bg-white"
-              }`}
+              className="block w-full text-left p-2 mb-2 border rounded"
+              style={{
+                backgroundColor: formData.attention === opt ? "#DF4661" : "white",
+                color: formData.attention === opt ? "white" : "black",
+                borderColor: "#DF4661",
+              }}
             >
               {opt}
             </button>
@@ -79,9 +86,12 @@ export default function Survey() {
             <button
               key={opt}
               onClick={() => handleChange("repeat", opt)}
-              className={`block w-full text-left p-2 mb-2 border rounded ${
-                formData.repeat === opt ? "bg-pink-500 text-white" : "bg-white"
-              }`}
+              className="block w-full text-left p-2 mb-2 border rounded"
+              style={{
+                backgroundColor: formData.repeat === opt ? "#DF4661" : "white",
+                color: formData.repeat === opt ? "white" : "black",
+                borderColor: "#DF4661",
+              }}
             >
               {opt}
             </button>
@@ -101,7 +111,8 @@ export default function Survey() {
         <div className="text-center">
           <button
             onClick={handleSubmit}
-            className="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-700"
+            className="text-white px-6 py-2 rounded hover:brightness-110"
+            style={{ backgroundColor: "#DF4661" }}
           >
             Enviar enquisa
           </button>
